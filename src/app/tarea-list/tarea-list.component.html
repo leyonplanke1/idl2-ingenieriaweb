@@ -1,0 +1,45 @@
+<!-- tarea-list.component.html -->
+<div class="container">
+    <h2>Lista de Tareas</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tarea of tareas; let i = index">
+                <td>{{ tarea.titulo }}</td>
+                <td>{{ tarea.descripcion }}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<table class="table">
+   
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Juan</td>
+            <td>%%%%%</td>
+            <td>%%%%%</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Diaz</td>
+            <td>%%%%</td>
+            <td>%%%%</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Mariano</td>
+            <td>%%%%</td>
+        </tr>
+    </tbody>
+</table>
+
+
